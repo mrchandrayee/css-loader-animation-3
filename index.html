@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b13">
+  <title>CSS Loader Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>CSS Loader Animation</h1>
+    <section class="loader-board" aria-label="CSS loader animation examples">
+      <article class="loader-card">
+        <div class="preview"><div class="double-ring" aria-label="Double ring loader"></div></div>
+        <div class="code-panel">
+          <h2>Double Ring</h2>
+          <pre><code>.double-ring {
+  border-top-color: #38bdf8;
+  border-bottom-color: #f472b6;
+  animation: spin 1s linear infinite;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview"><div class="ripple" aria-label="Ripple loader"><span></span><span></span></div></div>
+        <div class="code-panel">
+          <h2>Ripple</h2>
+          <pre><code>.ripple span {
+  border: 4px solid #60a5fa;
+  animation: ripple 1.8s infinite;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview">
+          <div class="pulse-grid" aria-label="Pulse grid loader">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="code-panel">
+          <h2>Pulse Grid</h2>
+          <pre><code>.pulse-grid span {
+  animation: gridPulse .9s
+  infinite ease-in-out;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview"><div class="arc" aria-label="Arc spinner loader"></div></div>
+        <div class="code-panel">
+          <h2>Arc Spinner</h2>
+          <pre><code>.arc {
+  border-top-color: #22c55e;
+  border-right-color: #22c55e;
+  animation: spin .9s linear infinite;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview">
+          <div class="diamond-orbit" aria-label="Diamond orbit loader">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="code-panel">
+          <h2>Diamond Orbit</h2>
+          <pre><code>.diamond-orbit {
+  animation: spin 2s linear infinite;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview"><div class="rot-square" aria-label="Rotating square loader"></div></div>
+        <div class="code-panel">
+          <h2>Rotating Square</h2>
+          <pre><code>.rot-square {
+  border: 5px solid #c084fc;
+  animation: rotSquare 1.2s
+  infinite ease-in-out;
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="loader-card">
+        <div class="preview"><div class="neon" aria-label="Neon loader"></div></div>
+        <div class="code-panel">
+          <h2>Neon</h2>
+          <pre><code>.neon {
+  border: 4px solid #00f7ff;
+  box-shadow: 0 0 24px #00f7ff;
+  animation: pulse 1s infinite;
+}</code></pre>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
